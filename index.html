@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binghatti Pinnacle Dubai | Official</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="ltr">
+
+    <div class="bg-slider">
+        <div class="slide active" style="background-image: url('assets/home1.jpg')"></div>
+        <div class="slide" style="background-image: url('assets/home2.jpg')"></div>
+        <div class="slide" style="background-image: url('assets/home3.jpg')"></div>
+    </div>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> <span data-en="Home" data-ar="الرئيسية">Home</span></a></li>
+            <li><a href="#price"><i class="fas fa-tag"></i> <span data-en="Price" data-ar="الأسعار">Price</span></a></li>
+            <li><a href="#siteplan"><i class="fas fa-layer-group"></i> <span data-en="Site Plan" data-ar="مخطط الموقع">Site Plan</span></a></li>
+            <li><a href="#amenities"><i class="fas fa-pool"></i> <span data-en="Amenities" data-ar="المرافق">Amenities</span></a></li>
+            <li><a href="#gallery"><i class="fas fa-images"></i> <span data-en="Gallery" data-ar="المعرض">Gallery</span></a></li>
+            <li><a href="#location"><i class="fas fa-map-marker-alt"></i> <span data-en="Location" data-ar="الموقع">Location</span></a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="lang-switch" onclick="toggleLanguage()" id="langBtn">العربية</div>
+            <div class="btn-gold" style="font-size: 11px; padding: 8px 15px; margin-left:10px;" data-en="Organize Site Visit" data-ar="تنظيم زيارة">Organize Site Visit</div>
+        </div>
+    </nav>
+
+    
+   <section id="home" style="background: transparent;">
+    <div class="hero-container">
+        
+        <div class="hero-card">
+            <div class="booking-tag" data-en="Booking Open" data-ar="الحجز مفتوح">Booking Open</div>
+            <h1 data-en="BINGHATTI PINNACLE" data-ar="بن غاطي بيناكل">BINGHATTI PINNACLE</h1>
+            <p data-en="At Al Jaddaf, Dubai" data-ar="في الجداف، دبي">At Al Jaddaf, Dubai</p>
+            <div class="dashed-box">
+                <p data-en="Ready To Move In 3 Months" data-ar="جاهز للسكن خلال 3 أشهر">Ready To Move In 3 Months</p>
+                <p data-en="70/30 Payment Plan" data-ar="خطة دفع 70/30">70/30 Payment Plan</p>
+            </div>
+            <div class="price-hero">AED 1.5 M</div>
+            <button class="btn-gold" style="width:100%" onclick="openModal()" data-en="Enquire Now" data-ar="استفسر الآن">Enquire Now</button>
+        </div>
+
+        <div class="side-form-container">
+            <div class="form-header">
+                <h3 style="color: #b39359;">ENQUIRE NOW</h3>
+            </div>
+            <form id="hero-enquiry-form">
+                <input type="text" placeholder="Name" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-gold-submit">Submit</button>
+            </form>
+            
+            <div class="trust-icons-container">
+                <div class="trust-item"><i class="fas fa-headset"></i><span>Instant<br>Callback</span></div>
+                <div class="trust-item"><i class="fas fa-car"></i><span>Free Site<br>Visit</span></div>
+                <div class="trust-item"><i class="fas fa-hand-holding-usd"></i><span>Best<br>Price</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="price">
+        <h2 class="sec-title" data-en="Apartments Price" data-ar="أسعار الشقق">Apartments Price</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th data-en="Type" data-ar="النوع">Type</th>
+                    <th data-en="Area" data-ar="المساحة">Area</th>
+                    <th data-en="Price" data-ar="السعر">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1 BR</td><td>712 Sq.Ft</td><td>AED 1.5 M</td></tr>
+                <tr><td>2 BR</td><td>1050 Sq.Ft</td><td>AED 2.1 M</td></tr>
+                <tr><td>3 BR</td><td>1450 Sq.Ft</td><td>AED 2.9 M</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+ <section id="siteplan">
+    <h2 class="sec-title" data-en="Site & Floor Plan" data-ar="مخطط الموقع والطابق">SITE & FLOOR PLAN</h2>
+    <div class="plan-container">
+        
+        <div class="plan-card">
+            <h3 data-en="Master Plan" data-ar="المخطط الرئيسي">Master Plan</h3>
+            <div class="plan-img-box" onclick="openModal()">
+                <img src="assets/home1.jpg" alt="Master Plan">
+                <div class="overlay">
+                    <span data-en="Request Details" data-ar="طلب التفاصيل">Request Details</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="plan-card">
+            <h3 data-en="Unit Plan" data-ar="مخطط الوحدة">Unit Plan</h3>
+            <div class="plan-img-box" onclick="openModal()">
+                <img src="assets/home2.jpg" alt="Unit Plan">
+                <div class="overlay">
+                    <span data-en="Request Details" data-ar="طلب التفاصيل">Request Details</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="amenities">
+        <h2 class="sec-title" data-en="World Class Amenities" data-ar="مرافق عالمية المستوى">World Class Amenities</h2>
+        <div class="amenities-wrapper">
+            <div class="amenities-slider" id="amenitySlider">
+                <div class="amen-card">
+                    <img src="assets/gym.jpg" alt="Gym">
+                    <div class="amen-info"><i class="fas fa-dumbbell"></i> <span data-en="Gym & Fitness" data-ar="مركز اللياقة">Gym & Fitness</span></div>
+                </div>
+                <div class="amen-card">
+                    <img src="assets/playarea.jpg" alt="Play Area">
+                    <div class="amen-info"><i class="fas fa-child"></i> <span data-en="Children's Play Area" data-ar="منطقة لعب الأطفال">Children's Play Area</span></div>
+                </div>
+                <div class="amen-card">
+                    <img src="assets/lounge.jpg" alt="Lounge">
+                    <div class="amen-info"><i class="fas fa-couch"></i> <span data-en="Resident Lounge" data-ar="صالة المقيمين">Resident Lounge</span></div>
+                </div>
+                <div class="amen-card">
+                    <img src="assets/pool.jpg" alt="Pool">
+                    <div class="amen-info"><i class="fas fa-swimmer"></i> <span data-en="Swimming Pool" data-ar="مسبح">Swimming Pool</span></div>
+                </div>
+                <div class="amen-card">
+                    <img src="assets/yoga.jpg" alt="Yoga">
+                    <div class="amen-info"><i class="fas fa-spa"></i> <span data-en="Yoga Platform" data-ar="منصة اليوغا">Yoga Platform</span></div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button onclick="slideLeft()" class="slide-btn"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="slideRight()" class="slide-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="sec-title" data-en="Project Gallery" data-ar="معرض المشروع">Project Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="assets/gal1.jpg" alt="Gallery"></div>
+            <div class="gallery-item"><img src="assets/gal2.jpg" alt="Gallery"></div>
+            <div class="gallery-item"><img src="assets/gal3.jpg" alt="Gallery"></div>
+            <div class="gallery-item"><img src="assets/gal4.jpg" alt="Gallery"></div>
+        </div>
+    </section>
+
+    <section id="location">
+    <h2 class="sec-title" data-en="Location" data-ar="الموقع">Location</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.165249673905!2d55.3235!3d25.215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5daea810d7a3%3A0x6b872c676449170e!2sAl%20Jaddaf%20-%20Dubai!5e0!3m2!1sen!2sae!4v1700000000000" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+    <div class="connectivity-box">
+    <div class="connectivity-header">
+        <span data-en="Connectivity" data-ar="سهولة الوصول">Connectivity</span>
+    </div>
+    
+    <ul class="location-list">
+        <li><i class="fas fa-map-marker-alt"></i> Burj Khalifa & Downtown - 3 mins</li>
+        <li><i class="fas fa-map-marker-alt"></i> The Dubai Mall - 3 Mins</li>
+        <li><i class="fas fa-map-marker-alt"></i> Dubai Opera - 3 Mins</li>
+        <li><i class="fas fa-map-marker-alt"></i> Al Jaddaf Walk - 3 Mins</li>
+        <li><i class="fas fa-map-marker-alt"></i> Dubai Frame - 4 Mins</li>
+        <li><i class="fas fa-map-marker-alt"></i> Meydan Racecourse - 10 mins</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin-top: 30px;">
+    <button class="btn-location-details" onclick="openModal()" data-en="Request Location Details" data-ar="طلب تفاصيل الموقع">
+        Request Location Details
+    </button>
+</div>
+<div class="schedule-visit-container">
+    <h2 class="schedule-title">Schedule a Site Visit</h2>
+    <div class="schedule-content">
+        
+        <div class="schedule-image">
+            <img src="assets/gal6.jpg" alt="Dubai Skyline View">
+        </div>
+
+        <div class="schedule-form">
+            <form id="site-visit-form">
+                <input type="text" placeholder="Name" required>
+                
+                <div class="phone-input-container">
+    
+                    <input type="tel" placeholder="Mobile Number" required>
+                </div>
+                
+                <input type="email" placeholder="Email" required>
+                
+                <div class="consent-box">
+                    <input type="checkbox" id="consent-check" required>
+                    <label for="consent-check">
+                        I consent to the processing of provided data according to 
+                        <a href="#">Privacy Policy</a> & <a href="#">Terms & Conditions</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit-gold">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+
+    <div id="brochureModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <h3 data-en="DOWNLOAD BROCHURE" data-ar="تحميل الكتيب">DOWNLOAD BROCHURE</h3>
+            <form id="brochureForm">
+                <input type="text" id="userName" placeholder="Name" required style="width:100%; padding:10px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+                <input type="email" id="userEmail" placeholder="Email" required style="width:100%; padding:10px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+                <input type="tel" id="userPhone" placeholder="Phone Number" required style="width:100%; padding:10px; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+                <button type="submit" class="btn-gold" style="width:100%; margin-top:10px;" data-en="DOWNLOAD NOW" data-ar="تحميل الآن">DOWNLOAD NOW</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="site-footer">
+    <div class="footer-container">
+        <p class="disclaimer-text">
+            Disclaimer : We are an authorised marketing partner for this project. Provided content is given by respective owners and this website and content is for information purpose only and it does not constitute any offer to avail for any services. Prices mentioned are subject to change without prior notice and properties mentioned are subject to availability. You can expect a call, SMS or emails on details registered with us.
+        </p>
+        
+        <div class="copyright-bar">
+            Copyright © 2025 | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
